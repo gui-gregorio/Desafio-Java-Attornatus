@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.demo.PessoasTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-01-07T01:37:23" hostname="DESKTOP-98PC66G" time="0.178">
+  <properties/>
+  <testcase name="pessoasTests()" classname="com.example.demo.PessoasTests" time="0.178"/>
+  <system-out><![CDATA[22:37:19.812 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [PessoasTests]: using SpringBootContextLoader
+22:37:19.818 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.demo.PessoasTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+22:37:19.819 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.demo.PessoasTests]: PessoasTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+22:37:19.853 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using ContextCustomizers for test class [PessoasTests]: [DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer]
+22:37:19.945 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [C:\Users\gui_-\Desktop\demo\build\classes\java\main\com\example\demo\DemoApplication.class]
+22:37:19.947 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.demo.DemoApplication for test class com.example.demo.PessoasTests
+22:37:20.056 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners for test class [PessoasTests]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
+22:37:20.058 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: class [PessoasTests], class annotated with @DirtiesContext [false] with mode [null]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.1)
+
+2023-01-06T22:37:20.328-03:00  INFO 21216 --- [    Test worker] com.example.demo.PessoasTests            : Starting PessoasTests using Java 17.0.1 with PID 21216 (started by gui_- in C:\Users\gui_-\Desktop\demo)
+2023-01-06T22:37:20.329-03:00  INFO 21216 --- [    Test worker] com.example.demo.PessoasTests            : No active profile set, falling back to 1 default profile: "default"
+2023-01-06T22:37:20.862-03:00  INFO 21216 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-06T22:37:20.917-03:00  INFO 21216 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 1 JPA repository interfaces.
+2023-01-06T22:37:21.249-03:00  INFO 21216 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-01-06T22:37:21.316-03:00  INFO 21216 --- [    Test worker] h2database                               : database opening mem:testh2db (build 214)
+2023-01-06T22:37:21.361-03:00  INFO 21216 --- [    Test worker] h2database                               : database opened mem:testh2db
+2023-01-06T22:37:21.362-03:00  INFO 21216 --- [    Test worker] h2database                               : database connecting session #3 to mem:testh2db
+2023-01-06T22:37:21.410-03:00  INFO 21216 --- [    Test worker] h2database                               : jdbc[3] 
+/*SQL */SET TRACE_LEVEL_FILE 4;
+2023-01-06T22:37:21.410-03:00  INFO 21216 --- [    Test worker] h2database                               : jdbc[3] 
+/**/Connection conn0 = DriverManager.getConnection("jdbc:h2:mem:testh2db;TRACE_LEVEL_FILE=4", "SA", "");
+2023-01-06T22:37:21.413-03:00  INFO 21216 --- [    Test worker] h2database                               : jdbc[3] 
+/*SQL #:1*/CALL READONLY();
+2023-01-06T22:37:21.414-03:00  INFO 21216 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testh2db user=SA
+2023-01-06T22:37:21.416-03:00  INFO 21216 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-01-06T22:37:21.466-03:00  INFO 21216 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-01-06T22:37:21.521-03:00  INFO 21216 --- [onnection adder] h2database                               : database connecting session #4 to mem:testh2db
+2023-01-06T22:37:21.521-03:00  INFO 21216 --- [onnection adder] h2database                               : jdbc[4] 
+/*SQL */SET TRACE_LEVEL_FILE 4;
+2023-01-06T22:37:21.522-03:00  INFO 21216 --- [onnection adder] h2database                               : jdbc[4] 
+/**/Connection conn1 = DriverManager.getConnection("jdbc:h2:mem:testh2db;TRACE_LEVEL_FILE=4", "SA", "");
+2023-01-06T22:37:21.522-03:00  INFO 21216 --- [onnection adder] h2database                               : jdbc[4] 
+/*SQL #:1*/CALL READONLY();
+2023-01-06T22:37:21.526-03:00  INFO 21216 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-01-06T22:37:21.535-03:00  INFO 21216 --- [onnection adder] h2database                               : database connecting session #5 to mem:testh2db
+2023-01-06T22:37:21.536-03:00  INFO 21216 --- [onnection adder] h2database                               : jdbc[5] 
+/*SQL */SET TRACE_LEVEL_FILE 4;
+2023-01-06T22:37:21.536-03:00  INFO 21216 --- [onnection adder] h2database                               : jdbc[5] 
+/**/Connection conn2 = DriverManager.getConnection("jdbc:h2:mem:testh2db;TRACE_LEVEL_FILE=4", "SA", "");
+2023-01-06T22:37:21.537-03:00  INFO 21216 --- [onnection adder] h2database                               : jdbc[5] 
+/*SQL #:1*/CALL READONLY();
+2023-01-06T22:37:21.550-03:00  INFO 21216 --- [onnection adder] h2database                               : database connecting session #6 to mem:testh2db
+2023-01-06T22:37:21.551-03:00  INFO 21216 --- [onnection adder] h2database                               : jdbc[6] 
+/*SQL */SET TRACE_LEVEL_FILE 4;
+2023-01-06T22:37:21.551-03:00  INFO 21216 --- [onnection adder] h2database                               : jdbc[6] 
+/**/Connection conn3 = DriverManager.getConnection("jdbc:h2:mem:testh2db;TRACE_LEVEL_FILE=4", "SA", "");
+2023-01-06T22:37:21.551-03:00  INFO 21216 --- [onnection adder] h2database                               : jdbc[6] 
+/*SQL #:1*/CALL READONLY();
+2023-01-06T22:37:21.565-03:00  INFO 21216 --- [onnection adder] h2database                               : database connecting session #7 to mem:testh2db
+2023-01-06T22:37:21.566-03:00  INFO 21216 --- [onnection adder] h2database                               : jdbc[7] 
+/*SQL */SET TRACE_LEVEL_FILE 4;
+2023-01-06T22:37:21.566-03:00  INFO 21216 --- [onnection adder] h2database                               : jdbc[7] 
+/**/Connection conn4 = DriverManager.getConnection("jdbc:h2:mem:testh2db;TRACE_LEVEL_FILE=4", "SA", "");
+2023-01-06T22:37:21.567-03:00  INFO 21216 --- [onnection adder] h2database                               : jdbc[7] 
+/*SQL #:1*/CALL READONLY();
+2023-01-06T22:37:21.581-03:00  INFO 21216 --- [onnection adder] h2database                               : database connecting session #8 to mem:testh2db
+2023-01-06T22:37:21.581-03:00  INFO 21216 --- [onnection adder] h2database                               : jdbc[8] 
+/*SQL */SET TRACE_LEVEL_FILE 4;
+2023-01-06T22:37:21.581-03:00  INFO 21216 --- [onnection adder] h2database                               : jdbc[8] 
+/**/Connection conn5 = DriverManager.getConnection("jdbc:h2:mem:testh2db;TRACE_LEVEL_FILE=4", "SA", "");
+2023-01-06T22:37:21.582-03:00  INFO 21216 --- [onnection adder] h2database                               : jdbc[8] 
+/*SQL #:1*/CALL READONLY();
+2023-01-06T22:37:21.596-03:00  INFO 21216 --- [onnection adder] h2database                               : database connecting session #9 to mem:testh2db
+2023-01-06T22:37:21.596-03:00  INFO 21216 --- [onnection adder] h2database                               : jdbc[9] 
+/*SQL */SET TRACE_LEVEL_FILE 4;
+2023-01-06T22:37:21.596-03:00  INFO 21216 --- [onnection adder] h2database                               : jdbc[9] 
+/**/Connection conn6 = DriverManager.getConnection("jdbc:h2:mem:testh2db;TRACE_LEVEL_FILE=4", "SA", "");
+2023-01-06T22:37:21.597-03:00  INFO 21216 --- [onnection adder] h2database                               : jdbc[9] 
+/*SQL #:1*/CALL READONLY();
+2023-01-06T22:37:21.611-03:00  INFO 21216 --- [onnection adder] h2database                               : database connecting session #10 to mem:testh2db
+2023-01-06T22:37:21.612-03:00  INFO 21216 --- [onnection adder] h2database                               : jdbc[10] 
+/*SQL */SET TRACE_LEVEL_FILE 4;
+2023-01-06T22:37:21.612-03:00  INFO 21216 --- [onnection adder] h2database                               : jdbc[10] 
+/**/Connection conn7 = DriverManager.getConnection("jdbc:h2:mem:testh2db;TRACE_LEVEL_FILE=4", "SA", "");
+2023-01-06T22:37:21.612-03:00  INFO 21216 --- [onnection adder] h2database                               : jdbc[10] 
+/*SQL #:1*/CALL READONLY();
+2023-01-06T22:37:21.626-03:00  INFO 21216 --- [onnection adder] h2database                               : database connecting session #11 to mem:testh2db
+2023-01-06T22:37:21.628-03:00  INFO 21216 --- [onnection adder] h2database                               : jdbc[11] 
+/*SQL */SET TRACE_LEVEL_FILE 4;
+2023-01-06T22:37:21.629-03:00  INFO 21216 --- [onnection adder] h2database                               : jdbc[11] 
+/**/Connection conn8 = DriverManager.getConnection("jdbc:h2:mem:testh2db;TRACE_LEVEL_FILE=4", "SA", "");
+2023-01-06T22:37:21.629-03:00  INFO 21216 --- [onnection adder] h2database                               : jdbc[11] 
+/*SQL #:1*/CALL READONLY();
+2023-01-06T22:37:21.642-03:00  INFO 21216 --- [onnection adder] h2database                               : database connecting session #12 to mem:testh2db
+2023-01-06T22:37:21.643-03:00  INFO 21216 --- [onnection adder] h2database                               : jdbc[12] 
+/*SQL */SET TRACE_LEVEL_FILE 4;
+2023-01-06T22:37:21.643-03:00  INFO 21216 --- [onnection adder] h2database                               : jdbc[12] 
+/**/Connection conn9 = DriverManager.getConnection("jdbc:h2:mem:testh2db;TRACE_LEVEL_FILE=4", "SA", "");
+2023-01-06T22:37:21.644-03:00  INFO 21216 --- [onnection adder] h2database                               : jdbc[12] 
+/*SQL #:1*/CALL READONLY();
+2023-01-06T22:37:21.698-03:00  WARN 21216 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-01-06T22:37:21.841-03:00  INFO 21216 --- [    Test worker] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-01-06T22:37:21.852-03:00  INFO 21216 --- [    Test worker] h2database                               : jdbc[3] 
+/*SQL #:1*/CALL DATABASE();
+2023-01-06T22:37:22.697-03:00  INFO 21216 --- [    Test worker] h2database                               : jdbc[3] 
+/*SQL */drop table if exists address cascade;
+2023-01-06T22:37:22.698-03:00  INFO 21216 --- [    Test worker] h2database                               : jdbc[3] 
+/*SQL */drop table if exists pessoa cascade;
+2023-01-06T22:37:22.698-03:00  INFO 21216 --- [    Test worker] h2database                               : jdbc[3] 
+/*SQL */drop table if exists pessoa_address cascade;
+2023-01-06T22:37:22.699-03:00  INFO 21216 --- [    Test worker] h2database                               : jdbc[3] 
+/*SQL */drop sequence if exists pessoa_sequence;
+2023-01-06T22:37:22.707-03:00  INFO 21216 --- [    Test worker] h2database                               : jdbc[3] 
+/*SQL */create sequence pessoa_sequence start with 1 increment by 1;
+2023-01-06T22:37:22.717-03:00  INFO 21216 --- [    Test worker] h2database                               : jdbc[3] 
+/*SQL t:3*/create table address (id bigint generated by default as identity, cep varchar(255), cidade varchar(255), logradouro varchar(255), numero varchar(255), principal boolean, primary key (id));
+2023-01-06T22:37:22.718-03:00  INFO 21216 --- [    Test worker] h2database                               : jdbc[3] 
+/*SQL */create table pessoa (id bigint not null, data_nascimento date, nome varchar(255), primary key (id));
+2023-01-06T22:37:22.718-03:00  INFO 21216 --- [    Test worker] h2database                               : jdbc[3] 
+/*SQL */create table pessoa_address (pessoa_id bigint not null, address_id bigint not null);
+2023-01-06T22:37:22.720-03:00  INFO 21216 --- [    Test worker] h2database                               : jdbc[3] 
+/*SQL */alter table if exists pessoa_address add constraint UK_kkvb1uhut4ac1xdqu772tky02 unique (address_id);
+2023-01-06T22:37:22.730-03:00  INFO 21216 --- [    Test worker] h2database                               : jdbc[3] 
+/*SQL t:9*/alter table if exists pessoa_address add constraint FK1mfty99oqvaroivd5h1uu0wk4 foreign key (address_id) references address;
+2023-01-06T22:37:22.732-03:00  INFO 21216 --- [    Test worker] h2database                               : jdbc[3] 
+/*SQL */alter table if exists pessoa_address add constraint FKnxmgo72exwbgrcnnw2unoe6rh foreign key (pessoa_id) references pessoa;
+2023-01-06T22:37:22.736-03:00  INFO 21216 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-01-06T22:37:22.747-03:00  INFO 21216 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-06T22:37:23.094-03:00  WARN 21216 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-06T22:37:23.401-03:00  INFO 21216 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testh2db'
+2023-01-06T22:37:23.451-03:00  INFO 21216 --- [    Test worker] com.example.demo.PessoasTests            : Started PessoasTests in 3.339 seconds (process running for 4.367)
+2023-01-06T22:37:23.483-03:00  INFO 21216 --- [    Test worker] h2database                               : jdbc[3] 
+/*SQL #:1 t:2*/select next value for pessoa_sequence;
+2023-01-06T22:37:23.496-03:00  INFO 21216 --- [    Test worker] h2database                               : jdbc[3] 
+/*SQL l:74 #:1 t:1*/SELECT SETTING_VALUE FROM INFORMATION_SCHEMA.SETTINGS WHERE SETTING_NAME=? {1: 'QUERY_TIMEOUT'};
+2023-01-06T22:37:23.523-03:00  INFO 21216 --- [    Test worker] h2database                               : jdbc[3] 
+/*SQL l:63 #:1*/insert into pessoa (data_nascimento, nome, id) values (?, ?, ?) {1: DATE '2001-07-07', 2: 'Caio Renan', 3: CAST(1 AS BIGINT)};
+2023-01-06T22:37:23.526-03:00  INFO 21216 --- [    Test worker] h2database                               : jdbc[3] 
+/*SQL l:100 #:1*/insert into address (id, cep, cidade, logradouro, numero, principal) values (default, ?, ?, ?, ?, ?) {1: '000-000', 2: 'Cidade dos Caios', 3: 'Rua do Caio', 4: '0', 5: FALSE};
+2023-01-06T22:37:23.529-03:00  INFO 21216 --- [    Test worker] h2database                               : jdbc[3] 
+/*SQL l:100 #:1*/insert into address (id, cep, cidade, logradouro, numero, principal) values (default, ?, ?, ?, ?, ?) {1: '1111-111', 2: 'Cidade do Caios', 3: 'Rua do caio 2', 4: '1', 5: TRUE};
+2023-01-06T22:37:23.530-03:00  INFO 21216 --- [    Test worker] h2database                               : jdbc[3] 
+/*SQL #:1*/select next value for pessoa_sequence;
+2023-01-06T22:37:23.531-03:00  INFO 21216 --- [    Test worker] h2database                               : jdbc[3] 
+/*SQL l:63 #:1*/insert into pessoa (data_nascimento, nome, id) values (?, ?, ?) {1: DATE '1993-12-29', 2: 'Rafael Arruda', 3: CAST(2 AS BIGINT)};
+2023-01-06T22:37:23.531-03:00  INFO 21216 --- [    Test worker] h2database                               : jdbc[3] 
+/*SQL l:100 #:1*/insert into address (id, cep, cidade, logradouro, numero, principal) values (default, ?, ?, ?, ?, ?) {1: '0618-222', 2: U&'S\\00e3o Paulo', 3: 'Rua dos sapos', 4: '3', 5: TRUE};
+2023-01-06T22:37:23.532-03:00  INFO 21216 --- [    Test worker] h2database                               : jdbc[3] 
+/*SQL #:1*/select next value for pessoa_sequence;
+2023-01-06T22:37:23.532-03:00  INFO 21216 --- [    Test worker] h2database                               : jdbc[3] 
+/*SQL l:63 #:1*/insert into pessoa (data_nascimento, nome, id) values (?, ?, ?) {1: DATE '1993-11-03', 2: 'Kaique Botti', 3: CAST(3 AS BIGINT)};
+2023-01-06T22:37:23.532-03:00  INFO 21216 --- [    Test worker] h2database                               : jdbc[3] 
+/*SQL l:100 #:1*/insert into address (id, cep, cidade, logradouro, numero, principal) values (default, ?, ?, ?, ?, ?) {1: '0623-123', 2: U&'S\\00e3o Paulo', 3: 'Rua do Kurt', 4: '322', 5: TRUE};
+2023-01-06T22:37:23.533-03:00  INFO 21216 --- [    Test worker] h2database                               : jdbc[3] 
+/*SQL #:1*/select next value for pessoa_sequence;
+2023-01-06T22:37:23.533-03:00  INFO 21216 --- [    Test worker] h2database                               : jdbc[3] 
+/*SQL l:63 #:1*/insert into pessoa (data_nascimento, nome, id) values (?, ?, ?) {1: DATE '1990-11-02', 2: 'Leonardo Oliveira', 3: CAST(4 AS BIGINT)};
+2023-01-06T22:37:23.533-03:00  INFO 21216 --- [    Test worker] h2database                               : jdbc[3] 
+/*SQL l:100 #:1*/insert into address (id, cep, cidade, logradouro, numero, principal) values (default, ?, ?, ?, ?, ?) {1: '0623-123', 2: 'Osasco', 3: 'Rua do Leonardo', 4: '22', 5: TRUE};
+2023-01-06T22:37:23.546-03:00  INFO 21216 --- [    Test worker] h2database                               : jdbc[3] 
+/*SQL l:64 #:1*/insert into pessoa_address (pessoa_id, address_id) values (?, ?) {1: CAST(1 AS BIGINT), 2: CAST(1 AS BIGINT)};
+2023-01-06T22:37:23.546-03:00  INFO 21216 --- [    Test worker] h2database                               : jdbc[3] 
+/*SQL l:64 #:1*/insert into pessoa_address (pessoa_id, address_id) values (?, ?) {1: CAST(1 AS BIGINT), 2: CAST(2 AS BIGINT)};
+2023-01-06T22:37:23.547-03:00  INFO 21216 --- [    Test worker] h2database                               : jdbc[3] 
+/*SQL l:64 #:1*/insert into pessoa_address (pessoa_id, address_id) values (?, ?) {1: CAST(2 AS BIGINT), 2: CAST(3 AS BIGINT)};
+2023-01-06T22:37:23.547-03:00  INFO 21216 --- [    Test worker] h2database                               : jdbc[3] 
+/*SQL l:64 #:1*/insert into pessoa_address (pessoa_id, address_id) values (?, ?) {1: CAST(3 AS BIGINT), 2: CAST(4 AS BIGINT)};
+2023-01-06T22:37:23.548-03:00  INFO 21216 --- [    Test worker] h2database                               : jdbc[3] 
+/*SQL l:64 #:1*/insert into pessoa_address (pessoa_id, address_id) values (?, ?) {1: CAST(4 AS BIGINT), 2: CAST(5 AS BIGINT)};
+2023-01-06T22:37:23.549-03:00  INFO 21216 --- [    Test worker] h2database                               : jdbc[3] 
+/*SQL */COMMIT;
+2023-01-06T22:37:23.549-03:00  INFO 21216 --- [    Test worker] h2database                               : jdbc[3] 
+/*SQL */COMMIT;
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
